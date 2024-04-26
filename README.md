@@ -6,7 +6,7 @@ TODO: Link Paper Here
 
 
 ## Model Installation
-The model is compiled to run on linux systems, the only dependancy is, libatlas, the specific version used and tested is below.
+The model is compiled to run on linux systems, the only dependency is, libatlas, the specific version used and tested is below.
 ```
 sudo apt-get install libatlas-base-dev=3.10.3-8ubuntu7
 ```
@@ -34,7 +34,7 @@ docker run -v /workspaces/HLA-Apollo:/home/HLA-Apollo -t hla-apollo /home/HLA-Ap
 - Note:
   - Replace /workspaces/HLA-Apollo with the absolute file path, not relative, for this checked out repository folder on your system.
   - The rest of the command remains constant unless you want to change the input or output filenames.
-  - Make sure new csvs you wish to run are located, or symlinked, inside this repositorys folder. 
+  - Make sure new csvs you wish to run are located, or symlinked, inside this repositories folder. 
 
 
 ## Input File Format
@@ -51,13 +51,13 @@ The input is required to be a csv file with the following 4 columns,
     - Example: IAKSGTSEFL
 
 - n_flank
-    - Description: The 10 Amino Acid sequence before the start of the peptide.  If it is unkown, or is known to be less than 10, pad sequence from the left with '*' charachters
+    - Description: The 10 Amino Acid sequence before the start of the peptide.  If it is unknown, or is known to be less than 10, pad sequence from the left with '*' characters
     - Example: REELVKNLGT
     - Example: *****KNLGT
     - Example: **********
 
 - c_flank
-    - Description: The 10 Amino Acid sequence after the end of the peptide.  If it is unkown, or is known to be less than 10, pad sequence from the right with '*' charachters
+    - Description: The 10 Amino Acid sequence after the end of the peptide.  If it is unknown, or is known to be less than 10, pad sequence from the right with '*' characters
     - Example: NKMTEAQEDG
     - Example: NKMTEA****
     - Example: **********
@@ -69,7 +69,7 @@ Additional columns can be included and will be passed to the output csv, but wil
 
 The model output is a csv file with the same columns as the input, with the following additional columns,
 - invalid_allele
-    - Description: True if the row contains an allele that is considered invalid, typically this means the model does not have a lookup psuedo sequence available for that allele, otherwise False is populated
+    - Description: True if the row contains an allele that is considered invalid, typically this means the model does not have a lookup pseudo sequence available for that allele, otherwise False is populated
 - invalid_aa
     - Description: True if an invalid Amino Acid is found, otherwise False is populated
 - invalid_length
