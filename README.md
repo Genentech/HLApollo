@@ -29,6 +29,7 @@ chmod 777 HLA-Apollo
 
 Running through the docker container is as follows on  Github codespaces:
 ```
+chmod 777 HLA-Apollo
 docker run -v /workspaces/HLA-Apollo:/home/HLA-Apollo -t hla-apollo /home/HLA-Apollo/HLA-Apollo /home/HLA-Apollo/example.csv /home/HLA-Apollo/example_out.csv
 ```
 - Note:
