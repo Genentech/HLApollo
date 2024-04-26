@@ -4,8 +4,6 @@ HLApollo: A superior transformer model for pan-allelic peptide-MHC-I presentatio
 TODO: Link Paper Here
 
 
-docker run -v /workspaces/HLA-Apollo:/home/HLA-Apollo -t hla-apollo /home/HLA-Apollo/HLA-Apollo /home/HLA-Apollo/example.csv /home/HLA-Apollo/example_out.csv
-
 
 ## Model Installation
 The model is compiled to run on linux systems, the only dependancy is, libatlas, the specific version used and tested is below.
