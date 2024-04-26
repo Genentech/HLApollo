@@ -8,6 +8,3 @@ RUN apt-get update \
         libatlas-base-dev=3.10.3-8ubuntu7 \
     && rm -rf /var/lib/apt/lists/*
 
-RUN conda install -y \
-        pandas==1.5.3 \
-    && conda clean -ya
