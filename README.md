@@ -1,8 +1,7 @@
 # HLApollo
 HLApollo: A superior transformer model for pan-allelic peptide-MHC-I presentation prediction, with diverse negative coverage, deconvolution and protein language features
 
-TODO: Link Paper Here
-
+https://www.biorxiv.org/content/10.1101/2022.12.08.519673v1
 
 
 ## Model Installation
