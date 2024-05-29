@@ -5,6 +5,7 @@ https://www.biorxiv.org/content/10.1101/2022.12.08.519673v1
 
 
 ## Model Installation
+Model is stored in this repo with git-lfs, make sure git-lfs is installed before checkout of this repository.
 The model is compiled to run on linux systems, the only dependency is, libatlas, the specific version used and tested is below.
 ```
 sudo apt-get install libatlas-base-dev=3.10.3-8ubuntu7
